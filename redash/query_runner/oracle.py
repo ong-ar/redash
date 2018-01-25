@@ -1,6 +1,9 @@
 import json
 import logging
 import sys
+import os
+
+os.environ['NLS_LANG'] = '.UTF8'
 
 from redash.query_runner import *
 from redash.utils import JSONEncoder
