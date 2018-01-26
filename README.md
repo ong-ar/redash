@@ -48,3 +48,11 @@ You can try out the demo instance: http://demo.redash.io/ (login with any Google
 ## License
 
 BSD-2-Clause.
+
+## ong-ar
+
+* How to setup (you must need docker, docker-compose)
+1. git clone https://github.com/ong-ar/redash.git
+2. docker-compose -f docker-compose.production.yml up
+3. docker-compose -f docker-compose.production.yml run --rm server create_db
+4. http://localhost:80
