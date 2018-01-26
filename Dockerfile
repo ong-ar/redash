@@ -12,7 +12,7 @@ USER redash
 
 ENTRYPOINT ["/app/bin/docker-entrypoint"]
 
-# oracle
+# +oracle
 USER root
 
 # Oracle instantclient

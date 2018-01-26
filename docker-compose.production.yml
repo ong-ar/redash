@@ -4,6 +4,7 @@
 # Some other recommendations:
 # 1. To persist Postgres data, assign it a volume host location.
 # 2. Split the worker service to adhoc workers and scheduled queries workers.
+
 # 3. if you want to modify charset in runner, you clone git and add volumes.
 
 version: '2'
