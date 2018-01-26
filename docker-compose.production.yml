@@ -11,8 +11,8 @@ version: '2'
 services:
   server:
     image: ongar/redash:1.0
-    volumes:
-      - /home/gm1602645/Workspace/git/redash/redash/query_runner:/app/redash/query_runner
+    # volumes:
+    #   - /path/on/host:/app/redash/query_runner
     command: server
     depends_on:
       - postgres
@@ -29,8 +29,8 @@ services:
     restart: always
   worker:
     image: ongar/redash:1.0
-    volumes:
-      - /home/gm1602645/Workspace/git/redash/redash/query_runner:/app/redash/query_runner
+    # volumes:
+    #   - /path/on/host:/app/redash/query_runner
     command: scheduler
     environment:
       PYTHONUNBUFFERED: 0
